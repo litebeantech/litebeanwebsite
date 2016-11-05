@@ -1,0 +1,30 @@
+
+create database -  omt-5_3
+execute "dump-import.bat" in command prompt
+	Ensure the postgresql path is correct in "dump-import.bat" [right click edit]
+	
+It will ask for postgres password: enter"postgres" (or any other password stored during setup)
+
+Have the license & public_key in "omt-license" under same dir[where omt jar is located] / user directory
+
+Double click - omt-<release>.jar
+
+login as administrator/password
+
+Setting 
+On the left menu, Admin >> Admin_Settings
+	1. Ensure the PG_DUMP_EXE - is pointed to right exe
+	2. DB name pointed to the corrected one - db name is directly associated with license
+	3. Ensure postgres - username/password are configured
+	4. Change PG_DUMP_LOCATION - to where you want the dump to be downloaded
+	5. PAYMENT_APPROVAL - 1 - approval required, 2 - auto approved
+
+
+Unit configuration
+Onleft menu, Go to Inventory >> Configure Unit/Tax
+
+First table - for unit
+	Enter a unit say "No", and save it by clicking green tick
+	
+	
+. 
